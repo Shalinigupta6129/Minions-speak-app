@@ -3,19 +3,23 @@
 
 :root{
     --primary: #F2C94C;
-    --brown:#a8a29e;
 }
 
 body{
     font-family: 'Alegreya', serif;
-}  
+    max-width: 80%;
+    width: 100%;
+    margin: 0px auto;
+     
+}
+
+h1{
+    text-align: center;
+}
 
 .navigation{
-    text-align: center;
     background-color: var(--primary);
-    padding: 0.5rem 0rem;
-    width:800px;
-    margin:auto;
+    padding: 1rem;
     border-bottom-left-radius: 0.5rem;
     font-size: 20px;
    
@@ -27,56 +31,54 @@ body{
     background-image: url("image/image.svg");
 
     background-repeat: no-repeat;
-    background-size: 400px;
-    width: 300px;
+    background-size: 350px;
     height: 400px;
+    background-blend-mode: lighten;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
    
     
 }
+
+.container-center{
+    padding: 1rem 0rem;
+}
+
 #output{
-    border: 1px solid black;
+    display: block;
     padding: 1rem;
-    margin: 1rem;
-    width: 90%;
+    margin: auto;
+    width: 60%;
     height:10vh;
     border-radius: 0.4rem;
-    font-family: 'Alegreya', serif ;
-    font-size: large;
 }
   
 
 #txt-input{
 
-        border: 1px solid black;
-        padding: 1rem;
-        margin: 1rem;
-        height: 10vh;
-        width: 90%;
-        border-radius: 0.4rem;
-        font-family: 'Alegreya', serif;
-        font-size: large;
-        display:block;
+    border: 1px solid green;
+    padding: 1rem;
+    margin: 1rem;
+    height: 10vh;
+    width: 60%;
+    border-radius: 0.4rem;
 }
 
-.main-item{
-
-    padding: 1rem 1rem;
-    margin: auto;
-    width: 600px;
-}
 
 h3{
     text-align: center;
+    font-size: large;
 }
 
 footer{
     padding: 1rem 1rem;
-    width: 800px;
     margin: auto;
     background-color: var(--primary);
     border-top-right-radius: 0.5rem;
-    font-size: large;
     text-align: center;
+    display: block;
+    font-size: large;
 }
 
 #btn-translate{
@@ -86,5 +88,6 @@ footer{
     margin: 1rem 1rem;
     padding: 1rem 2rem;
     font-size: large;
+    font-weight: bold;
 }
 
